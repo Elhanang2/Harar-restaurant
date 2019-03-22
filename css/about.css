@@ -1,0 +1,12 @@
+.abaut-us h1{
+    padding-top: 30px;
+    font-family: playfair display,serif;
+    font-style: italic;
+    text-align: center;
+}
+.abaut-us p{
+    margin-top: 10px;
+    padding: 0px 30px;
+    text-align: center;
+    line-height: 30px;
+}

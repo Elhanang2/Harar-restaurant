@@ -1,0 +1,33 @@
+.homepage-topimage{
+    background-image: url('../images/home1.jpeg');
+    width: 98%;
+    height: 98vh;
+    margin:auto;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+.homepage-topimage h1
+{
+    color: rgb(49, 49, 49);
+    font-family: playfair display,serif;
+    font-size: 60px!important;
+    font-weight: 700;
+    font-style: italic;
+    /* display: block; */
+    padding: 100px;
+}
+/* .homepage-topimage h1 span{
+    color: #ffc107;
+} */
+/* .homepage-topimage h1{
+    color: #fff;
+    font-family: playfair display,serif;
+    font-size: 60px!important;
+  text-align: center;
+  filter: drop-shadow(.05em .05em rgb(240, 153, 5));
+  mix-blend-mode: difference;
+} */
