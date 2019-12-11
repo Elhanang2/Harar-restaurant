@@ -28,7 +28,7 @@
 /* dish images */
 .slideshow-container img {
   border-radius: 50%;
-  width: 35vw;
+  width: 35%;
   /* height: auto; */
 }
 
@@ -64,7 +64,7 @@
 
   /* transition-duration: 10s; */
   transition-delay: 10s;
-  animation: rotation 3s ease-in-out;
+  animation: rotation 2s ease-in-out;
 }
 
 .fade2 {

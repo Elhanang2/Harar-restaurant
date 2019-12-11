@@ -1,5 +1,14 @@
+.allfoods-menu{
+    background-image: url("../images/menubackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* position: absolute; */
+    
+}
 #menu-heading {
-    margin-top: 80px;
+    margin-top: 10px;
     text-align: center;
     font-family: playfair display, serif;
     font-style: italic;

@@ -1,5 +1,5 @@
 .services{
-    
+    margin: auto;
     text-align: center;
 }
 .services h1{
@@ -16,23 +16,20 @@
     width: 100px;
 }
 .services ul{
-    /* margin: 40px ; */
-    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    
 }
 .services ul li{
-    display: block;
-    float: left;
-    width: 28%;
-    /* margin: 15px; */
-    /* padding-right: 40px; */
+    width: 300px;
+    /* margin: auto ; */
+    
 }
 .services p{
     line-height: 30px;
+    /* text-align: start; */
 }
 
-@media only screen and (max-width: 930px){
-    .services ul li{
-        width: 100%;
-    } 
-    
-}
