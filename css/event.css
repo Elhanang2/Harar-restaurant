@@ -1,0 +1,39 @@
+.event-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.image-collection{
+    width: 400px;
+    flex-grow: 1;
+    /* margin: 10px; */
+}
+.event-discription{
+    width: 300px;
+    flex-grow: 2;
+    /* margin: 10px; */
+}
+.events-page .events-heading h1 {
+    text-align: center;
+    font-family: playfair display, serif;
+    font-style: italic;
+}
+
+.events-page .events-heading p {
+    text-align: center;
+    color: rgb(185, 184, 184);
+    text-transform: uppercase;
+    /* padding-bottom: 10px; */
+}
+/* @media only screen and (max-width: 800px){
+    .image-collection{
+        width: 300px;
+       
+    }
+    .event-discription{
+        width: 300px;
+       
+    }
+} */

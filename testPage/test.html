@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        $(".loadhtml").on("click", function (e) {
+            e.preventDefault();
+            $.get("index.html", function (data) {
+                $("#terms").html(data);
+            });
+            
+        })
+        $(".loadhtml1").on("click", function (e) {
+            e.preventDefault();
+            $.get("./pages/breakfast.html", function (data) {
+                $("#terms").html(data);
+            });
+            
+        })
+
+        $("a").on("click", function (e) {
+            e.preventDefault();
+            $("#terms").load(this.href);
+        })
+
+    })
+</script>
+
+<body>
+    <a href="./pages/breakfast.html">link</a>
+    
+    <button class="loadhtml">click me </button>
+    <button class="loadhtml1">click  </button>
+    <div id="terms"></div>
+</body>
+
+
+</html>

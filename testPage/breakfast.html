@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <style> 
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 80px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #ccc;
+            overflow: hidden;
+        }
+
+       /* .book {
+            perspective: 1800px;
+            transform-style: preserve-3d;
+            position: relative;
+            height: 75%;
+            cursor: pointer;
+            /* backface-visibility: visible; 
+        }*/
+
+        .front,
+        .back,
+        .page1,
+        .page2 {
+            overflow: hidden;
+            transform-style: preserve-3d;
+            position: absolute;
+            width: 30vw;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform-origin: left center;
+            transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+        }
+
+        .front,
+        .back {
+            background: navy;
+        }
+
+        .front,
+        .page1,
+        .back,
+        .page2 {
+            border-bottom-right-radius: .5em;
+            border-top-right-radius: .5em;
+        }
+
+        .front h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+
+            color: white;
+            font-size: 6vw;
+        }
+
+        .page1 {
+            background: #efefef;
+            overflow: hidden;
+
+        }
+
+        .page2 {
+            background: #efefef;
+            overflow: hidden;
+
+        }
+
+        .permahover .front {
+
+            transform: rotateY(-160deg) scale(1.1);
+            box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        }
+
+        .permahover .page1 {
+            transform: rotateY(-150deg) scale(1.1);
+            box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+        }
+
+        .permahover .page1 p {
+            transform: rotateY(150deg) scale(1.1);
+            padding-bottom: 5px;
+        }
+
+        .permahover .page1 h3 {
+            transform: rotateY(150deg) scale(1.1);
+            /* padding-bottom: 5px ; */
+        }
+
+        .permahover .page2 {
+            transform: rotateY(-30deg) scale(1.1);
+            /* box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2); */
+        }
+
+        .permahover .page2 p {
+            transform: rotateY(50deg);
+            padding-bottom: 5px;
+        }
+
+        .permahover .back {
+            transform: rotateY(-20deg) scale(1.1);
+        }
+
+        /* *********** */
+
+        .breakfast {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            margin-top: -20px;
+            background-color: rgb(255, 242, 217);
+        }
+
+        .breakfast ul {
+            overflow: visible;
+            padding-top: 10px;
+            /* margin: 0; */
+
+        }
+
+        .breakfast ul li {
+
+            display: block;
+
+            padding-right: 10px;
+            padding-left: 0px;
+            text-align: center;
+
+        }
+
+
+        .breakfast ul li h3 {
+            font-size: 1.0vw;
+        }
+
+        .breakfast ul li h3 span {
+            font-size: 0.8vw;
+            font-weight: normal;
+        }
+
+        .breakfast ul li p {
+
+            font-size: 0.8vw;
+            font-weight: bold;
+
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .box {
+            width: 800px;
+            height: 800px;
+            padding: 50px;
+        }
+
+
+        
+
+        @media only screen and (max-width: 1000px) {
+            .breakfast ul li h3 {
+                font-size: 1.3vw;
+            }
+
+            .breakfast ul li h3 span {
+                font-size: 1.1vw;
+                font-weight: normal;
+            }
+
+            .breakfast ul li p {
+
+                font-size: 1.1vw;
+                font-weight: bold;
+
+            }
+        } 
+
+        @media only screen and (max-width: 1200px) {
+            .breakfast ul li h3 {
+                font-size: 1.4vw;
+            }
+
+            .breakfast ul li h3 span {
+                font-size: 1.2vw;
+                font-weight: normal;
+            }
+
+            .breakfast ul li p {
+
+                font-size: 1.2vw;
+                font-weight: bold;
+
+            }
+        } 
+
+        @media only screen and (max-width: 650px) {
+            .breakfast ul li h3 {
+                font-size: 1.8vw;
+            }
+
+            .breakfast ul li h3 span {
+                font-size: 1.6vw;
+                font-weight: normal;
+            }
+
+            .breakfast ul li p {
+
+                font-size: 1.6vw;
+                font-weight: bold;
+
+            }
+        } 
+
+        @media only screen and (max-width: 450px) {
+            .breakfast ul li h3 {
+                font-size: 2.2vw;
+            }
+
+            .breakfast ul li h3 span {
+                font-size: 2vw;
+                font-weight: normal;
+            }
+
+            .breakfast ul li p {
+
+                font-size: 2vw;
+                font-weight: bold;
+
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <a href="https://www.google.com/">Breakfast</a> -->
+
+        <div class="book" id="book">
+            <div class="back"></div>
+
+
+            <div class="page2">
+                <div class="breakfast">
+
+                    <ul>
+
+                        <li>
+                            <h3> Chechebssa <br><span>Teff or wheat spiced with butter and red pepper.</span></h3>
+                            <p>78 Birr</p>
+                        </li>
+                        <li>
+                            <h3>Kinche <br><span>Cracked wheat cooked with spiced butter and a touch of salt.</span>
+                            </h3>
+                            <p>78 Birr</p>
+                        </li>
+                        <li>
+                            <h3>kuanta firfir <br><span>Fresh Injera, beef jerky sauce prepared with red pepper, onion
+                                    and garlic.</span></h3>
+                            <p>133 Birr</p>
+                        </li>
+                        <li>
+                            <h3>fasting firfir <br><span>Fresh Injera, red pepper sauce prepared with onion and
+                                    garlic.</span></h3>
+                            <p>89 Birr</p>
+                        </li>
+                        <li>
+                            <h3>Special Breakfast <br><span>Cobinaiton of platter of kinche, firfir and
+                                    chechebssa.</span></h3>
+                            <p>135 Birr</p>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="page1">
+                <div class="breakfast">
+
+                    <ul>
+
+                        <li>
+                            <h3>Genfo <br><span>Barley flour/ Butter/ Red pepper.</span></h3>
+                            <p>78 Birr</p>
+                        </li>
+                        <li>
+                            <h3>Bulla genfo <br><span>False banana tree roots powder/ Butter/ Red pepper.</span></h3>
+                            <p>78 Birr</p>
+                        </li>
+                        <li>
+                            <h3>Scrambled Eggs <br><span>Eggs.</span></h3>
+                            <p>75 Birr</p>
+                        </li>
+                        <li>
+                            <h3>Scrambled Eggs with Meat <br><span>Eggs/ Beef.</span></h3>
+                            <p>115 Birr</p>
+                        </li>
+                        <li>
+                            <h3>Kategna <br><span>Crunchy Injera/ Red pepper/ Spicy butter/ sunflower oil</span></h3>
+                            <p>94 Birr</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="front">
+                <h1>Menu</h1>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <script type="text/javascript">
+        $("#book").on("mouseover", function () {
+            $("#book").addClass('permahover');
+        });
+        $(window).scroll(function () {
+            var windowpos = $(window).scrollTop();
+            if (windowpos >= 1000) {
+                $("#book").addClass("permahover");
+            } else {
+                $("#book").removeClass("permahover");
+            }
+        });
+    </script>
+</body>
+
+</html>

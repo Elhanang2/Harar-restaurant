@@ -1,100 +1,139 @@
-.dishes{
-    clear: both;
-    padding: 4em 0;
-    text-align: center;
-    /* background-color: rgb(236, 238, 231); */
+.dishes {
+  clear: both;
+  padding: 4em 0;
+  text-align: center;
+  
 }
-.dishes h1{
-  font-family: playfair display,serif;
-  font-style: italic; 
+.mySlides{
+  height: 100%;
 }
-.dishes p{
-    text-transform: uppercase;
-    color: rgb(184, 180, 180);
-}
-.slideshow-container {
-    margin: auto;
-    width: 100%;
-    border: solid  rgb(236, 238, 231);
-    padding: 40px 10px;
-  }
-  /* dish images */
-  .slideshow-container img{
-    border-radius: 50%;
-    width: 40%;
-    height: auto;
-  }
-  /* Caption text */
-  .text {
-    color: #239e75;
-    font-size: 22px;
-    padding: 18px 12px;
-    width: 100%;
-    text-align: center;
-  }
-  
-   
-  /* The dots/bullets/indicators */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    /* transition: background-color 0.6s ease; */
-  }
-  
-  .active {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade1 {
-    
-    /* -webkit-animation-duration: 10s; */
-    
-    /* transition-duration: 10s; */
-    transition-delay: 10;
-    animation: rotation 2s   ease-in-out  ;
-  }
-  .fade2 {
-    /* -webkit-animation-duration: 10s;  */
-    /* transition-duration: 10s; */
-    transition-delay: 10s;
-    animation: rotation2 2s   ease-in-out ;
-  }
-  .fade3 {
-    /* -webkit-animation-duration: 10s;  */
-    /* transition-duration: 10s; */
-    transition-delay: 10s;
-    animation: rotation3 2s   ease-in-out ;
-  }
-  
-  @-webkit-keyframes rotation {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes rotation {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  @keyframes rotation {
-      0% {transform:translate(0px, 0px) rotateX(0deg)}
-      30%, 70%{transform: translate(0px, 0px) rotateX(0deg) }
-      100% {transform: translate(-300px, -150px) rotateX(90deg)}
-  }
-  @keyframes rotation2 {
-    0% {transform:translate(0px, 0px) rotateX(0deg)}
-    30%, 70%{transform: translate(0px, 0px) rotateX(0deg) }
-    100% {transform: translate(300px, -150px) rotateX(90deg)}
-}
-@keyframes rotation3 {
-  0% {transform:translate(-500px, 0px) rotateX(0deg)}
-  30%, 70%{transform: translate(0px, 0px) rotateX(0deg) }
-  100% {transform: translate(600px, -150px) rotateX(90deg)}
-}
-  
 
-  
+.dishes h1 {
+  font-family: playfair display, serif;
+  font-style: italic;
+}
+
+.dishes p {
+  text-transform: uppercase;
+  color: rgb(184, 180, 180);
+}
+
+.slideshow-container {
+  margin: auto;
+  width: 100%;
+  border: solid rgb(236, 238, 231);
+  padding: 40px 10px;
+}
+
+/* dish images */
+.slideshow-container img {
+  border-radius: 50%;
+  width: 35vw;
+  /* height: auto; */
+}
+
+/* Caption text */
+.text {
+  color: #239e75;
+  font-size: 22px;
+  padding: 18px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+
+  /* -webkit-animation-duration: 10s; */
+
+  /* transition-duration: 10s; */
+  transition-delay: 10s;
+  animation: rotation 3s ease-in-out;
+}
+
+.fade2 {
+  /* -webkit-animation-duration: 10s;  */
+  /* transition-duration: 10s; */
+  transition-delay: 10s;
+  animation: rotation2 2s ease-in-out;
+}
+
+.fade3 {
+  /* -webkit-animation-duration: 10s;  */
+  /* transition-duration: 10s; */
+  transition-delay: 10s;
+  animation: rotation3 2s ease-in-out;
+}
+
+
+
+/* @keyframes rotation {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+} */
+
+@keyframes rotation {
+  0% {
+    transform: translate(-600px, -100px) rotateX(90deg)
+  }
+
+  30%,
+  70% {
+    transform: translate(0px, 0px) rotateX(0deg)
+  }
+
+  100% {
+    transform: translate(-600px, -100px) rotateX(90deg)
+  }
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: translate(600px, -120px) rotateX(90deg)
+  }
+
+  30%,
+  70% {
+    transform: translate(0px, 0px) rotateX(0deg)
+  }
+
+  100% {
+    transform: translate(600px, -120px) rotateX(90deg)
+  }
+}
+
+@keyframes rotation3 {
+  0% {
+    transform: translate(-500px, 0px) rotateX(0deg)
+  }
+
+  30%,
+  70% {
+    transform: translate(0px, 0px) rotateX(0deg)
+  }
+
+  100% {
+    transform: translate(500px, 0px) rotateX(90deg)
+  }
+}

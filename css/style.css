@@ -1,25 +1,29 @@
-@import url("home.css"); 
-@import url("about.css"); 
-@import url("services.css"); 
-@import url("dishes.css"); 
-@import url("menu.css"); 
-@import url("event.css"); 
-body{
+@import url("home.css");
+@import url("about.css");
+@import url("services.css");
+@import url("dishes.css");
+@import url("menu.css");
+@import url("event.css");
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Gilda Display', serif;
 }
-.container{
+
+.container {
     margin: 0;
     padding: 0;
+    width: 100%;
     /* background-color: #ffffff; */
 }
-header
-{
-    font-family: 'Gilda Display', serif; 
-    
+
+header {
+    font-family: 'Gilda Display', serif;
+
 }
-.address{
+
+.address {
     float: left;
     width: 30%;
     padding-left: 15%;
@@ -27,45 +31,52 @@ header
     align-content: center;
     padding-top: 20px;
     letter-spacing: 1px;
+    font-size: 15px;
 }
-.address span{
-    
+
+.address span {
+
     align-content: center;
     margin: auto;
     /* padding-left: 40px; */
 }
-.contact-list ul{
+
+.contact-list ul {
     display: flex;
     text-decoration: none;
     width: 20%;
     float: right;
-    
+
 }
-.contact-list ul li{
-    
+
+.contact-list ul li {
+
     display: block;
     padding-right: 20px;
-    
+
 }
-.restaurant-name{
+
+.restaurant-name {
     clear: both;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
     font-size: 56px;
     font-weight: bold;
     color: #ffb606;
 }
-.nav-bar{
+
+.nav-bar {
     padding: 20px 20px;
-    
-    width: 90%;
+
+    width: 100%;
     margin: auto;
     box-sizing: border-box;
-    background-color:  rgb(29, 29, 29);
+    background-color: rgb(29, 29, 29);
     overflow: hidden;
     z-index: 2;
 }
-.logo{
+
+.logo {
     padding: 0;
     margin: 0;
     font-size: 30px;
@@ -73,123 +84,119 @@ header
     color: white;
     float: left;
 }
-/* img {
-    border-radius: 50%;
-  } */
-.menu-toggle{
+
+
+.menu-toggle {
     display: none;
     float: right;
     color: white;
     font-size: 30px;
-    
+
 }
-.times{
+
+.times {
     display: none;
     float: right;
     color: white;
     font-size: 30px
 }
-.menu-toggle:hover{
+
+.menu-toggle:hover {
     cursor: pointer;
 }
-nav{
+
+nav {
     padding: 0;
     margin: 0;
     /* position: fixed; */
 }
-nav ul{
+
+nav ul {
     display: flex;
     float: right;
-    
+
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     padding-right: 40px;
-    
+
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-nav ul li a.active{
+
+nav ul li a.active {
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(148, 151, 151);
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     background-color: rgb(61, 114, 114);
     padding: 10px;
     border-radius: 10px;
     animation-delay: 10s;
 }
-.clearfix{
+
+.clearfix {
     clear: both;
 }
+
 .sticky {
     position: fixed;
     top: 0;
     /* padding: 10px 10px; */
     margin-right: 30px;
-    width: 98%;
-    
-  }
-  .events-page{
-      padding: 30px;
-      
-  }
-  .events-page .events-heading h1 {
-      text-align: center;
-      font-family: playfair display, serif ;
-    font-style: italic;
-  }
-  .events-page .events-heading p{
-      text-align: center;
-      color: gray;
-      text-transform: uppercase;
-      padding-bottom: 20px;
-  }
-  .image-collection{
-      width: 45%;
-  }
-  .event-description{
-    width: 45%;
-    float: left;
-  }
-  
-@media only screen and (max-width: 1050px){
-    .menu-toggle{
+    width: 100%;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1050px) {
+    .menu-toggle {
         display: block;
-        
+
         margin: 10px;
 
     }
-    .bars-hide{
+
+    .bars-hide {
         display: none;
         margin: 10px;
     }
-    .times-show{
+
+    .times-show {
         display: block;
     }
-    
+
     nav ul {
         display: none;
     }
-    
-    nav ul.active{
+
+    nav ul.active {
         display: block;
         width: 100%;
         background-color: rgb(68, 67, 67);
         padding: 20px 0;
 
     }
-    nav ul li{
+
+    nav ul li {
         padding: 10px 0;
         color: white;
         text-align: left;
-        
+
     }
-    nav ul li a{
+
+    nav ul li a {
         color: white;
     }
-} 
+}
