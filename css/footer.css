@@ -6,9 +6,7 @@
     margin: 0;
     text-align: center;
 }
-.opening-hours, .footer-address, .follow-us{
-    /* display: inline-block; */
-}
+
 .footer .opening-hours p span{
     color: #7fb401;
     font-size: 22px;
@@ -26,6 +24,7 @@
     display: block;
     text-decoration: none;
 }
+
 .footer-address ul li a .fas{
     color: #7fb401 !important;
     padding-right: 10px;
@@ -35,12 +34,13 @@
 .follow-us ul li {
     display: inline-block;
     padding: 10px;
-    font-size: 26px;
-    
+    font-size: 26px;  
 }
+
 .follow-us ul li a .fab{
     color: #7fb401 !important;
 }
+
 .footer-logo {
     position: relative;
     background-color: rgb(41, 39, 39);
@@ -49,20 +49,22 @@
     padding: 30px;
     color: rgb(138, 136, 136);
 }
+
 @media only screen and (min-width: 600px){
     .follow-us{
         width: 30%;
        float: left;
     }
+
     .opening-hours{
         width: 30%;
         float: left;
         padding-right: 30px;
     }
+
     .footer-address {
         width: 30%;
         overflow: hidden;
-       float: left;
-        
+       float: left;   
     }
 }

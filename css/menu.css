@@ -1,28 +1,35 @@
 .allfoods-menu{
-    background-image: url("../images/menubackground.png");
+    background-image: url("../images/menu4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
-    /* position: absolute; */
-    
+    background-position: center center;
+    height: 60vh;
+    width: 100vw;
+    position: relative; 
+} 
+.allfoods-menu-container{
+    position: absolute;
+    background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
 }
+
 #menu-heading {
-    margin-top: 10px;
+    margin-top: 40px;
     text-align: center;
+    align-items: center;
     font-family: playfair display, serif;
     font-style: italic;
-    padding: 25px;
+    padding: 40px;    
 }
 
 .food-menu-category {
     width: 100%;
-    padding: 0px 0px 30px 0px;
+    padding:  30px ;
     text-align: center;
-    /* margin-top: 50px;
-    margin-bottom: 30px; */
     text-transform: uppercase;
-    /* background-color: rgb(252, 235, 192); */
 }
 
 .menuList{
@@ -34,11 +41,22 @@
     text-transform: capitalize;
     font-family: playfair display, serif ;
 }
+
 .menuList:focus {
     outline:0;
-    background: navy;
     color: white;
-    
+}
+
+.breakfast:focus{
+    background: orange;
+}
+
+.lunch:focus{
+    background: rgb(11, 155, 199);
+}
+
+.dinner:focus{
+    background: navy;
 }
 
 .menu-container{
@@ -48,9 +66,9 @@
     justify-content: center;
     align-items: center;
     transform:perspective(800px);
-    background: rgb(221, 220, 220);
-
+    background: rgb(230, 228, 228);
 }
+
 .book{
     transform-style: preserve-3d;
     position: relative;
@@ -58,13 +76,16 @@
     cursor: pointer;
     backface-visibility: visible;
 }
+
 .front, .back {
     background: navy;
 
 }
+
 .page2{
     position: absolute;
 }
+
 .menu-list {
     width: 100%;
     height: 100%;
@@ -77,10 +98,8 @@
     text-align: center;
 }
 
-
 .menu-list ul li h3 {
     font-size: 1.2vmax;
-    /* transform: scale(1, -1); */
 }
 
 .menu-list ul li h3 span {
@@ -89,20 +108,20 @@
 }
 
 .menu-list ul li p {
-
     font-size: 1vmax;
     font-weight: bold;
 
 }
+
 .front,.back, .page1, .page2{
     border-bottom-right-radius: .5em;
     border-top-right-radius: .5em;
 }
 
 .page1, .page2{
-    
     background: #efefef;
 }
+
 .front, .back, .page1, .page2{
     transform-style: preserve-3d;
     position: absolute;
@@ -112,17 +131,18 @@
     left: 0;
     transform-origin: left center;
     transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
-
 }
 
 .book:hover .front{
     transform: rotateY(-160deg) scale(1,1);
     box-shadow: 0 1em 3em 0 rgba(0, 0,0, .2);
 }
+
 .book:hover .page1{
     transform: rotateY(-150deg) scale(1,1);
     box-shadow: 0 1em 3em 0 rgba(0, 0,0, .2);
 }
+
 .book:hover .page2{
     transform: rotateY(-30deg) scale(1,1);
     box-shadow: 0 1em 3em 0 rgba(0, 0,0, .2);
@@ -130,8 +150,8 @@
 
 .book:hover .back{
     transform: rotateY(-20deg) scale(1,1);
-    /* box-shadow: 0 1em 3em 0 rgba(0, 0,0, .2) */
 }
+
 .front h1{
     position: absolute;
     top: 50%;
@@ -140,13 +160,12 @@
     text-align: center;
     color: white;
     font-size: 5vmax;
-    text-transform: uppercase;
 }
-
 
 .page1 .menu-list {
     transform: scale(-1, 1);
 }
+
 @media only screen and (max-width: 1280px){
     .front, .back, .page1, .page2{
         width: 40vw;
@@ -169,10 +188,5 @@
     .front h1{
         font-size: 4vmax;
     }
-    /* .page1, .page2{
-        padding-top: 20px;
-        /* background: #efefef; 
-    } */
 }
-
 #loadOverlay{display: none;}

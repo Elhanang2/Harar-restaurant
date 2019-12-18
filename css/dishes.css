@@ -1,9 +1,10 @@
 .dishes {
   clear: both;
-  padding: 4em 0;
+  padding: 1em 0;
   text-align: center;
-  
+  margin-bottom: 30px;
 }
+
 .mySlides{
   height: 100%;
 }
@@ -21,15 +22,14 @@
 .slideshow-container {
   margin: auto;
   width: 100%;
-  border: solid rgb(236, 238, 231);
+  height: 100%;
   padding: 40px 10px;
 }
 
-/* dish images */
 .slideshow-container img {
   border-radius: 50%;
   width: 35%;
-  /* height: auto; */
+  height: 20vw;
 }
 
 /* Caption text */
@@ -41,7 +41,6 @@
   text-align: center;
 }
 
-
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -50,52 +49,40 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  /* transition: background-color 0.6s ease; */
+  transition: background-color 0.6s ease;
 }
 
-.active {
+.curousel-dot .active {
   background-color: #717171;
 }
 
 /* Fading animation */
 .fade1 {
-
-  /* -webkit-animation-duration: 10s; */
-
-  /* transition-duration: 10s; */
+  transition-duration: 10s;
   transition-delay: 10s;
   animation: rotation 2s ease-in-out;
 }
 
 .fade2 {
-  /* -webkit-animation-duration: 10s;  */
-  /* transition-duration: 10s; */
+  transition-duration: 10s;
   transition-delay: 10s;
   animation: rotation2 2s ease-in-out;
 }
 
 .fade3 {
-  /* -webkit-animation-duration: 10s;  */
-  /* transition-duration: 10s; */
+  transition-duration: 10s;
   transition-delay: 10s;
   animation: rotation3 2s ease-in-out;
 }
-
-
-
-/* @keyframes rotation {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-} */
+.fade4 {
+  transition-duration: 10s;
+  transition-delay: 10s;
+  animation: rotation4 2s ease-in-out;
+}
 
 @keyframes rotation {
   0% {
-    transform: translate(-600px, -100px) rotateX(90deg)
+    transform: translate(-600px, -120px) rotateX(0deg)
   }
 
   30%,
@@ -104,7 +91,7 @@
   }
 
   100% {
-    transform: translate(-600px, -100px) rotateX(90deg)
+    transform: translate(-600px, -120px) rotateX(90deg)
   }
 }
 
@@ -135,5 +122,19 @@
 
   100% {
     transform: translate(500px, 0px) rotateX(90deg)
+  }
+}
+@keyframes rotation4 {
+  0% {
+    transform: translate(0px, -200px) rotateX(0deg)
+  }
+
+  30%,
+  70% {
+    transform: translate(0px, 0px) rotateX(0deg)
+  }
+
+  100% {
+    transform: translate(0px, 200px) rotateX(90deg)
   }
 }

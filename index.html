@@ -8,7 +8,9 @@
     <title>Harar restaurant</title>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <!-- <style>
@@ -20,7 +22,7 @@
 <body>
     <div class="container">
 
-        <header class="header">
+        <section class="header" id="home">
 
 
             <!-- address of the restaurant -->
@@ -28,16 +30,17 @@
             <!-- contact list -->
             <div class="contact-list">
                 <ul>
+                    <li><a href=""><i class="fas fa-envelope"></i></a></li>
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""> <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href=""> <i class="fab fa-instagram" ></i></a></li>
                 </ul>
             </div>
-            <div class="restaurant-name">HARAR</div>
+            <div class="restaurant-name">Dashen</div>
             <br><br>
             <hr>
             <!-- nav bar -->
-            <div class="homepage-topimage">
+            <div class="homepage-topimage" >
                 <div id="navigation-bar" class="nav-bar">
                     <div class="container-navbar">
                         <div class="logo">
@@ -51,28 +54,28 @@
                         </div>
 
                         <ul>
-                            <li><a href="#" class="active">home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#dishes">Dishes</a></li>
-                            <li><a href="#allfoods-menu">Menu</a></li>
-                            <li><a href="#events-page">Events</a></li>
-                            <li><a href="#">Gallery</a></li>
+                            <li><a class="navlist active" href="#home" >home</a></li>
+                            <li><a class="navlist" href="#about">About</a></li>
+                            <li><a class="navlist" href="#services">Services</a></li>
+                            <li><a class="navlist" href="#dishes">Dishes</a></li>
+                            <li><a class="navlist" href="#allfoods-menu">Menu</a></li>
+                            <li><a class="navlist" href="#events-page">Events</a></li>
+                            <li><a class="navlist" href="#adress">Address</a></li>
 
                         </ul>
                     </nav>
 
                 </div>
                 <div class="clearfix"></div>
-                <h1>Discover The <span>Flavors</span><br> of Harar</h1>
+                <h1>Discover The <span>Flavors</span><br> of Dashen</h1>
             </div>
-        </header>
+        </section>
 
         <!-- home page  -->
 
-        <div class="abaut-us" id="about">
+        <section class="abaut-us" id="about">
 
-            <h1>Check out story</h1>
+            <h1>Check our story</h1>
             <p>Established in 1976, Dashen Restaurant has been
                 serving our community and visitors with excellence.
                 Dashen Terara serves exquisite signature Ethiopian
@@ -92,9 +95,12 @@
                 destination for Ethiopian traditional food and the place to be to celebrate
                 major Ethiopian holidays with friends and family at our holiday special events.</p>
             <p>Come and visit us to experience traditional food at its best.</p>
-        </div>
+            <div class="dining-room">
+                <img  src="./images/diningroom.jpg"  width="100%" height="500px" alt="dining room">
+            </div>
+        </section>
         <!--our  service page -->
-        <div class="services" id="services">
+        <section class="services" id="services">
             <h1>Services</h1>
             <ul>
                 <li class="service-list1">
@@ -130,10 +136,10 @@
                         safely packaged foods for international consumption.</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- special dishes -->
-        <div class="dishes" id="dishes">
+        <section class="dishes" id="dishes">
             <h1>Signature Dishes</h1>
             <p>fresh and healthy food available</p>
             <div class="slideshow-container">
@@ -154,30 +160,37 @@
                     <img src="./images/kitfo.jpg" width="200px" height="300px" alt="kitfo image">
                     <div class="text">ክትፎ Kitfo</div>
                 </div>
+                <div class="mySlides fade4">
+
+                        <img src="./images/tibs.jpeg" width="200px" height="300px" alt="kitfo image">
+                        <div class="text"> Kitfo</div>
+                    </div>
             </div>
             <br>
-            <div style="text-align:center">
+            <div class="curousel-dot" style="text-align:center">
+                <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
             <div class="clearfix"></div>
-        </div>
+        </section>
 
-        <div class="allfoods-menu" id="allfoods-menu">
-
+        <section class="allfoods-menu" id="allfoods-menu">
+            <div class="allfoods-menu-container">
             <h1 id="menu-heading">Menu</h1>
             <div class="food-menu-category">
-                    <input type="button" class="breakfast menuList" value="breakfast"/>
-                    <input type="button" class="lunch menuList" value="lunch"/>
-                    <input type="button" class="dinner menuList" value="dinner"/>
+                    <input type="button" class="breakfast menuList" value="Breakfast"/>
+                    <input type="button" class="lunch menuList" value="Lunch"/>
+                    <input type="button" class="dinner menuList" value="Dinner"/>
             </div>
+        </div>
             <!-- <button>Breakfast</button>
             <iframe id="myFrame" height="100%" overflow:"hidden" width="100%" frameBorder="0" src="" frameborder="0" style="display:none"></iframe> -->
 
             <div id="eachMenu-page"></div>
-        </div>
-        <div class="events-page" id="events-page">
+        </section>
+        <section class="events-page" id="events-page">
             <div class="events-heading">
                 <h1>Events</h1>
                 <p>Don't miss our awesome events</p>
@@ -196,7 +209,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-        </div>
+        </section>
         <div class="reservation"></div>
         <footer class="footer" id="footer">
             <div class="footer-container">
@@ -224,7 +237,7 @@
                 </div>
             </div>
             <div class="footer-logo">
-                <p>@harar restaurant 2019</p>
+                <p>@dashen restaurant 2019</p>
             </div>
         </footer>
     </div>

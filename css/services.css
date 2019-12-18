@@ -2,34 +2,35 @@
     margin: auto;
     text-align: center;
 }
+
 .services h1{
     text-align: center;
     font-family: playfair display, serif ;
     font-style: italic;
     padding: 25px 25px 25px 60px ;
 }
+
 .services h4{
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .services img{
     width: 100px;
 }
+
 .services ul{
     list-style: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
-    
 }
+
 .services ul li{
     width: 300px;
-    /* margin: auto ; */
-    
 }
+
 .services p{
     line-height: 30px;
-    /* text-align: start; */
 }
 
