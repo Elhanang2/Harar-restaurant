@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   //nav bar toggle function when screen size is small the listed nav
   //bar will be hide and three bars represent nav bar when click list

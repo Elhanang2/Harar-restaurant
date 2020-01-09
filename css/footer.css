@@ -1,22 +1,29 @@
+.footer{
+      width: 100%;
+      
+  }
 .footer-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     background-color:  rgb(4, 1, 51);
     color: rgb(199, 198, 198);
-    overflow: hidden;
-    padding: 30px 80px;
-    margin: 0;
-    text-align: center;
+    /* overflow: hidden; */
+    padding: 20px;
+    /* text-align: center; */
 }
 
 .footer .opening-hours p span{
     color: #7fb401;
     font-size: 22px;
+    padding-right: 5px;
 }
 
 .footer-address ul li a {
-    padding-left: -40px;
+    /* padding-left: -40px; */
     color: rgb(199, 198, 198);
     text-decoration: none;
-   
 }
 
 .footer-address ul li {
@@ -28,7 +35,7 @@
 .footer-address ul li a .fas{
     color: #7fb401 !important;
     padding-right: 10px;
-    margin-left: -50px;
+    /* margin-left: -50px; */
 }
 
 .follow-us ul li {
@@ -43,14 +50,17 @@
 
 .footer-logo {
     position: relative;
-    background-color: rgb(41, 39, 39);
+    background-color: rgb(10, 10, 10);
     text-align: center;
     margin-top: -20px;
     padding: 30px;
     color: rgb(138, 136, 136);
 }
+.footer-container img{
+    
+}
 
-@media only screen and (min-width: 600px){
+/* @media only screen and (min-width: 600px){
     .follow-us{
         width: 30%;
        float: left;
@@ -67,4 +77,4 @@
         overflow: hidden;
        float: left;   
     }
-}
+} */

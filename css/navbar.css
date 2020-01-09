@@ -1,0 +1,129 @@
+.container-navbar{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 20px; */
+    /* align-items: center; */
+}
+.nav-bar {
+    /* display: flex; */
+    /* width: 90%; */
+    justify-content: space-around;
+    background-color: rgb(29, 29, 29);
+    margin: auto;
+    padding: 20px;
+    z-index: 2;
+}
+
+.logo {
+    
+    padding-bottom: 0px;
+    font-size: 30px;
+    /* font-weight: 400px; */
+    color: white;
+    /* float: left; */
+}
+
+.menu-toggle {
+    display: none;
+    /* float: right; */
+    color: white;
+    font-size: 30px;
+    /* margin-right: 40px; */
+}
+
+.times {
+    display: none;
+    color: white;
+    font-size: 30px
+}
+
+.menu-toggle:hover {
+    cursor: pointer;
+}
+
+/* nav {
+    padding: 0;
+    margin: 0;
+} */
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+   
+    /* float: right; */
+}
+
+nav ul li {
+    list-style: none;
+    
+    padding-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a.active {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(61, 114, 114);
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-left: -30px; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .menu-toggle {
+        display: block;
+        
+        /* margin: 10px; */
+    }
+
+    .bars-hide {
+        display: none;
+        /* margin: 10px; */
+    }
+
+    .times-show {
+        display: block;
+        
+    }
+
+    nav ul {
+        display: none;
+        /* text-align: center; */
+        /* background-color: white !important; */
+    }
+
+    nav ul.active {
+        display: block;
+        width: 80vw;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        /* padding: 20px 0; */
+        /* left: -50%; */
+        /* text-align: center; */
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+}

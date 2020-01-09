@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+    padding: 0;
+}
 .dishes {
   clear: both;
   /* padding: 1em 0; */
@@ -59,31 +63,31 @@
 
 /* Fading animation */
 .fade1 {
-  transition-duration: 10s;
+  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation 2s ease-in-out;
 }
 
 .fade2 {
-  transition-duration: 10s;
+  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation2 2s ease-in-out;
 }
 
 .fade3 {
-  transition-duration: 10s;
+  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation3 2s ease-in-out;
 }
 .fade4 {
-  transition-duration: 10s;
+  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation4 2s ease-in-out;
 }
 
 @keyframes rotation {
   0% {
-    transform: translate(-300px, -100px) rotateX(0deg)
+    transform: translate(-600px, -120px) rotateX(0deg)
   }
 
   30%,
@@ -92,13 +96,13 @@
   }
 
   100% {
-    transform: translate(-300px, -100px) rotateX(90deg)
+    transform: translate(-600px, -120px) rotateX(90deg)
   }
 }
 
 @keyframes rotation2 {
   0% {
-    transform: translate(300px, -100px) rotateX(90deg)
+    transform: translate(500px, -120px) rotateX(90deg)
   }
 
   30%,
@@ -107,13 +111,13 @@
   }
 
   100% {
-    transform: translate(300px, -100px) rotateX(90deg)
+    transform: translate(500px, -120px) rotateX(90deg)
   }
 }
 
 @keyframes rotation3 {
   0% {
-    transform: translate(-300px, 0px) rotateX(0deg)
+    transform: translate(-500px, 0px) rotateX(0deg)
   }
 
   30%,
@@ -122,7 +126,7 @@
   }
 
   100% {
-    transform: translate(300px, 0px) rotateX(90deg)
+    transform: translate(500px, 0px) rotateX(90deg)
   }
 }
 @keyframes rotation4 {

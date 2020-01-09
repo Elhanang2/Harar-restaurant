@@ -1,21 +1,87 @@
+body , html{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    font-family: 'Gilda Display', serif;
+}
+
+.container {
+    
+    width: 94%;
+    margin: auto;
+    overflow: hidden;
+    /* padding: 5%; */
+    /* background-color: #ffffff; */
+}
+
+#home{
+    font-family: 'Gilda Display', serif;
+
+}
+.contact-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.address {
+    align-content: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: rgb(61, 114, 114);
+}
+
+
+
+.contact-list ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-list ul li {
+    display: block;
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(61, 114, 114);
+}
+
+.contact-list ul li a{
+    color: rgb(61, 114, 114);
+}
+
+.restaurant-name {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(61, 114, 114);
+    text-transform: uppercase;
+}
+
 .homepage-topimage{
     background-image: url('../images/home1.jpeg');
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     margin:auto;
     padding-top: 30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;  
+    text-align: center; 
+    /* z-index: -1;  */
 }
 
 .homepage-topimage h1
 {
+    display: block;
+    justify-content: center;
     color: rgb(49, 49, 49);
     font-family: playfair display,serif;
     font-size: 60px!important;
     font-weight: 700;
     font-style: italic;
-    padding: 100px;
+    padding: 20px;
 }

@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harar restaurant</title>
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/dishes.css">
+    <link rel="stylesheet" href="./css/event.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <!-- <style>
@@ -24,17 +29,18 @@
 
         <section class="header" id="home">
 
-
-            <!-- address of the restaurant -->
-            <div class="address"><span>3900 West Adams Blvd.<br> Los Angeles, CA 90018</span> </div>
-            <!-- contact list -->
-            <div class="contact-list">
-                <ul>
-                    <li><a href=""><i class="fas fa-envelope"></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""> <i class="fab fa-instagram" ></i></a></li>
-                </ul>
+            <div class="contact-container">
+                <!-- address of the restaurant -->
+                <div class="address"><span>3900 West Adams Blvd.<br> Los Angeles, CA 90018</span> </div>
+                <!-- contact list -->
+                <div class="contact-list">
+                    <ul>
+                        <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""> <i class="fab fa-instagram" ></i></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="restaurant-name">Dashen</div>
             <br><br>
@@ -46,27 +52,27 @@
                         <div class="logo">
                             <img src="./images/log1 (1).jpg" style="border-radius:50%" alt="Logo">
                         </div>
+                    
+                        <nav>
+                            <div class="menu-toggle">
+                                <div class="bars"><i id="menu" class="fas fa-bars "></i></div>
+                                <div class="times"><i class="fas fa-times "></i></div>
+                            </div>
+
+                            <ul>
+                                <li><a class="navlist active" href="#home" >home</a></li>
+                                <li><a class="navlist" href="#about">About</a></li>
+                                <li><a class="navlist" href="#services">Services</a></li>
+                                <li><a class="navlist" href="#dishes">Dishes</a></li>
+                                <li><a class="navlist" href="#allfoods-menu">Menu</a></li>
+                                <li><a class="navlist" href="#events-page">Events</a></li>
+                                <li><a class="navlist" href="#adress">Address</a></li>
+
+                            </ul>
+                        </nav>
                     </div>
-                    <nav>
-                        <div class="menu-toggle">
-                            <div class="bars"><i id="menu" class="fas fa-bars "></i></div>
-                            <div class="times"><i class="fas fa-times "></i></div>
-                        </div>
-
-                        <ul>
-                            <li><a class="navlist active" href="#home" >home</a></li>
-                            <li><a class="navlist" href="#about">About</a></li>
-                            <li><a class="navlist" href="#services">Services</a></li>
-                            <li><a class="navlist" href="#dishes">Dishes</a></li>
-                            <li><a class="navlist" href="#allfoods-menu">Menu</a></li>
-                            <li><a class="navlist" href="#events-page">Events</a></li>
-                            <li><a class="navlist" href="#adress">Address</a></li>
-
-                        </ul>
-                    </nav>
-
                 </div>
-                <div class="clearfix"></div>
+                <!-- <div class="clearfix"></div> -->
                 <h1>Discover The <span>Flavors</span><br> of Dashen</h1>
             </div>
         </section>
@@ -104,32 +110,32 @@
             <h1>Services</h1>
             <ul>
                 <li class="service-list1">
-                    <img src="./images/icon1.png">
+                    <img src="./images/icon1.png" width="100px" alt="environment image">
                     <h4>clean & safe environment</h4>
                     <p>Enjoy traditional indoor and outdoor settings seating for small and large
                         groups up to 200, secure street parking space and a beautiful garden setting.</p>
                 </li>
                 <li class="service-list2">
-                    <img src="./images/icon2.png">
+                    <img src="./images/icon2.png" width="100px" alt="music imstrument image">
                     <h4>Live Music</h4>
                     <p>Dashen band is ready to entertain you with traditional music and professional dancers.
                         Come to listen & watch vibrant performances on Mon-Sat from 7pm.</p>
                 </li>
                 <li class="service-list3">
-                    <img src="./images/icon3.png">
+                    <img src="./images/icon3.png" width="100px" alt="food image">
                     <h4>Fresh and tasty food</h4>
                     <p>Dashen Terara is dedicated to maintaining over 40 years of care and tradition.
                         Our delicious dishes are made with homemade spices and responsibly sourced meats.</p>
                 </li>
                 <li class="service-list4">
-                    <img src="./images/icon4.png">
+                    <img src="./images/icon4.png" width="100px" alt="coffee ceremony image">
                     <h4>coffee ceremony</h4>
                     <p>End your meal with the billowing aroma of incense, popcorn for the spirits
                         and a traditional cup of Ethiopian coffee.</p>
                 </li>
                 
                 <li class="service-list5">
-                    <img src="./images/icon5.png">
+                    <img src="./images/icon5.png" width="100px" alt="catering image">
                     <h4>Catering</h4>
                     <p>Dashen Terara is prepared to make your next event an exquisite experience.
                         Catering services available for events held at Dashen or your preferred location. We also offer
@@ -198,7 +204,7 @@
             </div>
             <div class="event-body">
                 <div class="image-collection">
-                    <img src="./images/event.jpg" width="400px" alt="event image">
+                    <img src="./images/event.jpg" alt="event image">
                 </div>
                 <div class="event-discription">
                     
@@ -211,10 +217,12 @@
             <div class="clearfix"></div>
         </section>
         <div class="reservation"></div>
-        <footer class="footer" id="footer">
+        
+    </div>
+    <footer class="footer" id="footer">
             <div class="footer-container">
                 <div class="opening-hours">
-                    <img src="./images/logo-footer.png" alt="Opening Hours">
+                    <img src="./images/logo-footer.png" width="200px" alt="Opening Hours">
                     <p><span>Mon-Wed:</span> From 7:00 AM to 10:00 PM.</p>
                     <p><span>Thur-Sat:</span> From 7:00 AM to 12:00 AM.</p>
                     <p><span>Sun:</span> From 9:00 AM to 10:00 PM.</p>
@@ -240,10 +248,7 @@
                 <p>@dashen restaurant 2019</p>
             </div>
         </footer>
-    </div>
-
-    <script src="javascript/restaurant.js">
-    </script>
+    <script src="./javascript/restaurant.js"></script>
 </body>
 
 </html>
