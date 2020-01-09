@@ -3,38 +3,35 @@ body , html{
     padding: 0;
     left: 0;
     width: 100%;
-    /* overflow: hidden; */
     font-family: 'Gilda Display', serif;
 }
 
 .container {
-    
     width: 94%;
     margin: auto;
     overflow: hidden;
-    /* padding: 5%; */
-    /* background-color: #ffffff; */
 }
 
 #home{
     font-family: 'Gilda Display', serif;
-
+    height: 100vh;
 }
+
 .contact-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
+    height: 10vh;
 }
+
 .address {
     align-content: center;
     letter-spacing: 1px;
     font-size: 15px;
     color: rgb(61, 114, 114);
 }
-
-
 
 .contact-list ul {
     display: flex;
@@ -54,34 +51,30 @@ body , html{
 
 .restaurant-name {
     text-align: center;
-    padding-top: 10px;
     font-size: 56px;
     font-weight: bold;
     color: rgb(61, 114, 114);
     text-transform: uppercase;
+    height: 5vh;
 }
 
 .homepage-topimage{
     background-image: url('../images/home1.jpeg');
-    /* width: 100vw; */
-    height: 100vh;
+    height: 70vh;
     margin:auto;
     padding-top: 30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     text-align: center; 
-    /* z-index: -1;  */
 }
 
 .homepage-topimage h1
 {
-    display: block;
-    justify-content: center;
     color: rgb(49, 49, 49);
     font-family: playfair display,serif;
     font-size: 60px!important;
     font-weight: 700;
     font-style: italic;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }

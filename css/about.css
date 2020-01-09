@@ -1,5 +1,5 @@
 
- h1{
+.abaut-us h1{
     padding-top: 30px;
     font-family: playfair display,serif;
     font-style: italic;
@@ -9,13 +9,10 @@
 .abaut-us p{
     margin-top: 10px;
     padding: 0px 50px;
-    /* text-align: center; */
     line-height: 34px;
     font-size: 20px;
 }
 .dining-room{
     width: 100%;
-    height: 500px;
-    
-    
+    height: 500px;    
 }

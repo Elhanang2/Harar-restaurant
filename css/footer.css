@@ -1,7 +1,7 @@
 .footer{
       width: 100%;
-      
   }
+
 .footer-container{
     display: flex;
     flex-flow: row wrap;
@@ -9,9 +9,7 @@
     align-items: center;
     background-color:  rgb(4, 1, 51);
     color: rgb(199, 198, 198);
-    /* overflow: hidden; */
-    padding: 20px;
-    /* text-align: center; */
+    padding: 80px;
 }
 
 .footer .opening-hours p span{
@@ -21,7 +19,6 @@
 }
 
 .footer-address ul li a {
-    /* padding-left: -40px; */
     color: rgb(199, 198, 198);
     text-decoration: none;
 }
@@ -35,12 +32,11 @@
 .footer-address ul li a .fas{
     color: #7fb401 !important;
     padding-right: 10px;
-    /* margin-left: -50px; */
-}
+  }
 
 .follow-us ul li {
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     font-size: 26px;  
 }
 
@@ -56,25 +52,4 @@
     padding: 30px;
     color: rgb(138, 136, 136);
 }
-.footer-container img{
-    
-}
 
-/* @media only screen and (min-width: 600px){
-    .follow-us{
-        width: 30%;
-       float: left;
-    }
-
-    .opening-hours{
-        width: 30%;
-        float: left;
-        padding-right: 30px;
-    }
-
-    .footer-address {
-        width: 30%;
-        overflow: hidden;
-       float: left;   
-    }
-} */

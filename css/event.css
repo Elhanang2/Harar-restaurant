@@ -16,7 +16,7 @@ body{
 }
 
 .image-collection{
-    flex-grow: 1;
+    flex-grow: 1.5;
 }
 
 .event-discription{

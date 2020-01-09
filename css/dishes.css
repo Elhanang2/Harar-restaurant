@@ -4,13 +4,11 @@ body{
 }
 .dishes {
   clear: both;
-  /* padding: 1em 0; */
   text-align: center;
   margin-bottom: 50px;
 }
 
 .mySlides{
-  /* height: 100%; */
   width: 95%;
 }
 
@@ -63,24 +61,20 @@ body{
 
 /* Fading animation */
 .fade1 {
-  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation 2s ease-in-out;
 }
 
 .fade2 {
-  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation2 2s ease-in-out;
 }
 
 .fade3 {
-  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation3 2s ease-in-out;
 }
 .fade4 {
-  /* transition-duration: 10s; */
   transition-delay: 10s;
   animation: rotation4 2s ease-in-out;
 }
